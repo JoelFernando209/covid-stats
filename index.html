@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Covid Stadistics</title>
+  </head>
+  <body class='container'>
+    <header class='header'>
+      <img src='img/logo-covid.png' alt='Logo covid' class='header__logo'/>
+      <span class='header__title'>COVID-19 STADISTICS</span>
+    </header>
+    
+    <div class='banner'>
+      <h2 class='banner__title'>#STAYATHOME</h2>
+      <h4 class='banner__subtitle'>The only way to overcome this is with your help</h4>
+    </div>
+    
+    <main class='main'>
+      <div class='main__item main__item--infections'>
+        <img src='img/main--infections.jpg' class='main__portrait main__portrait--infections' />
+        
+        <span class='main__title'>
+          Total Infections
+          <span class='main__title-ubication'></span>
+        </span>
+        
+        <div class='main__desc'></div>
+      </div>
+      
+      <div class='main__item main__item--active-infections'>
+        <img src='img/main--new-infections.jpg' class='main__portrait main__portrait--active-infections' />
+        
+        <span class='main__title'>
+          New Infections
+          <span class='main__title-ubication'></span>
+        </span>
+        
+        <div class='main__desc'></div>
+      </div>
+      
+      <div class='main__item main__item--deaths'>
+        <img src='img/main--deaths.jpg' class='main__portrait main__portrait--deaths' />
+        
+        <span class='main__title'>
+          Total deaths
+          <span class='main__title-ubication'></span>
+        </span>
+        
+        <div class='main__desc'></div>
+      </div>
+      
+      <div class='main__item main__item--new-deaths'>
+        <img src='img/main--new-deaths.jpg' class='main__portrait main__portrait--new-deaths' />
+        
+        <span class='main__title'>
+          New deaths
+          <span class='main__title-ubication'></span>
+        </span>
+        
+        <div class='main__desc'></div>
+      </div>
+    </main>
+    
+    <div class='graphic'>
+      <div class='graphic__header'>
+        <span class='graphic__title'>Total Infections</span>
+        <div class='graphic__select graphic__select--infections'>
+          <div class='graphic__selected graphic__selected--infections'>World</div>
+          
+          <div class='graphic__options graphic__options--infections'>
+            
+            <div class='graphic__search'>
+              <input type='text' class='graphic__search-input graphic__search-input--infections' placeholder='Search a country...'/>
+              
+              <button class='graphic__search-btn graphic__search-btn--infections'>Search</button>
+            </div>
+            
+            <div class='graphic__options-countries graphic__options-countries--infections'>
+              
+              <div class='graphic__option'>
+                <img src='img/icon-globe.png' class='graphic__option-img'/>
+                
+                <span class='graphic__option-name'>World</span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class='graphic__table graphic__table--infections'>
+        <div class='graphic__loading graphic__loading--1'></div>
+      </div>
+    </div>
+    
+    
+    <div class='graphic'>
+      <div class='graphic__header'>
+        <span class='graphic__title'>Total Deaths</span>
+        <div class='graphic__select graphic__select--deaths'>
+          <div class='graphic__selected graphic__selected--deaths'>World</div>
+          
+          <div class='graphic__options graphic__options--deaths'>
+            
+            <div class='graphic__search'>
+              <input type='text' class='graphic__search-input graphic__search-input--deaths' placeholder='Search a country...'/>
+              
+              <button class='graphic__search-btn graphic__search-btn--deaths'>Search</button>
+            </div>
+            
+            <div class='graphic__options-countries graphic__options-countries--deaths'>
+              <div class='graphic__option'>
+                <img src='img/icon-globe.png' class='graphic__option-img'/>
+                
+                <span class='graphic__option-name'>World</span>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class='graphic__table graphic__table--deaths'>
+        <div class='graphic__loading graphic__loading--2'></div>
+      </div>
+    </div>
+    
+    <footer class='footer'>
+      <img src='img/logo-covid.png' alt='Logo covid' class='footer__logo'/>
+      <nav class='footer__nav'>
+        <ul class='footer__nav-ul'>
+          <li class='footer__nav-item'>Copyright &copy; Rights reserved. Not using for commercial use or put it in a portfolio. Joel Fernando Dominguez Tapia.</li>
+        </ul>
+      </nav>
+    </footer>
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src='./index.js'></script>
+  </body>
+</html>
