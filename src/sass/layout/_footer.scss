@@ -1,0 +1,35 @@
+.footer {
+  background-color: #201F1F;
+  grid-column: 1 / -1;
+  
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-row-gap: 1rem;
+  color: $color-white;
+
+  &__logo {
+    width: 5rem;
+    height: 5rem;
+  }
+  
+  &__nav {
+    
+  }
+  
+  &__nav-ul {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-column-gap: 3rem;
+  }
+  
+  &__nav-item {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

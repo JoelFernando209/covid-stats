@@ -1,0 +1,37 @@
+.banner {
+  background-image: linear-gradient(to bottom right, rgba(#757875, .3), rgba(lighten(#757875, 25%), .3)), url("https://i.imgur.com/uCWJdeM.jpg");
+  background-position: start;
+  background-size: cover;
+  
+  clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
+  
+  display: grid;
+  align-content: center;
+  align-items: start;
+  justify-content: center;
+  
+  & > * {
+    text-align: center;
+  }
+  
+  &__title {
+    font-size: 10rem;
+    color: $color-white;
+    line-height: 1;
+    
+    @include respond (tab-land) {
+      font-size: 7rem;
+    }
+  }
+  
+  &__subtitle {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #ECEBEB;
+    letter-spacing: .3rem;
+    
+    @include respond (tab-land) {
+      font-size: 1rem;
+    }
+  }
+}

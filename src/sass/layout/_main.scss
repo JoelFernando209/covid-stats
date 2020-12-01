@@ -1,0 +1,87 @@
+.main {
+  padding: 5rem;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 4rem;
+  grid-auto-rows: 1fr;
+  
+  &__item {
+    padding: 2rem;
+    color: $color-white;
+    
+    display: grid;
+    grid-template-columns: repeat(2, [col-start] 1fr [col-end]);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    
+    &--infections {
+      background-color: #18970D;
+    }
+    
+    &--active-infections {
+      background-color: #D61919;
+    }
+    
+    &--deaths {
+      background-color: #232323;
+    }
+    
+    &--new-deaths {
+      background-color: #E75300;
+    }
+  }
+  
+  &__title {
+    grid-column: col-start 2 / col-end 3;
+    grid-row: 1 / 2;
+    font-size: 2.5rem;
+    align-self: center;
+    
+    @include respond (tab-land) {
+      font-size: 2rem;
+    }
+  }
+  
+  &__portrait {
+    grid-column: col-start 1 / col-start 2;
+    grid-row: 1 / -1;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    &--infections {
+      background-image: url('../../dist/img/main--infections.jpg');
+    }
+    
+    &--active-infections {
+      background-image: url('../../dist/img/main--new-infections.jpg');
+    }
+    
+    &--deaths {
+      background-image: url('../../dist/img/main--deaths.jpg');
+    }
+    
+    &--new-deaths {
+      background-image: url('../../dist/img/main--new-deaths.jpg');
+    }
+  }
+  
+  &__desc {
+    font-size: 3.5rem;
+    font-weight: 700;
+    justify-self: center;
+    align-self: center;
+    
+    @include respond (phone) {
+      font-size: 2.5rem;
+    }
+  }
+  
+  &__title-ubication {
+    font-size: 1rem;
+    color: lightgray;
+  }
+}

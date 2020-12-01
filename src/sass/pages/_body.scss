@@ -1,0 +1,4 @@
+.container {
+  display: grid;
+  grid-template-rows: 10vh 60vh min-content repeat(2, 80vh) 20vh;
+}
